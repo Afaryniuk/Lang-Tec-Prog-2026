@@ -11,6 +11,6 @@ int main(int argc, char *argv[]) {
 	maior_temp = ((a+b)+abs(a-b))/2;	
 	maior = (maior_temp+c)+abs(maior_temp-c))/2;
 		
-	printf("o maior entre |%d|%d|%d|  = %d" , a,b,c, maior_temp);
+	printf("o maior entre |%d|%d|%d|  = %d" , a,b,c, maior);
 	return 0;
 }
