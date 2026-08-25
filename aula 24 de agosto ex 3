@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	int num;
+	int resultado;
+	
+	printf("Insira o valor: ");
+	scanf("%d", &num);
+	
+	if (num>0){
+		resultado = num*-1;
+	}
+	else {
+		resultado = num * num;
+	}
+	printf("%d", resultado);
+	
+	return 0;
+}
