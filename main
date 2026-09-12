@@ -1,62 +1,36 @@
-[Project]
-FileName=main
-Name=Project1
-Type=1
-Ver=2
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=0
-Icon=
-ExeOutput=
-ObjectOutput=
-LogOutput=
-LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-UseCustomMakefile=0
-CustomMakefile=
-CommandLine=
-Folders=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0000000000000000000000000
-UnitCount=1
+#include <stdio.h>
+#include <stdlib.h>
+#define pi 3.14159
 
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
+int main(int argc, char *argv[]) {
+// area do circulo	
+    
+    float raio, area, raioQuadrado;
+	
+	printf ("Inseira o valor de R: \n");
+	scanf("%f", &raio);
+	
+	raioQuadrado = raio*raio;
+	area = pi * raioQuadrado;
+	
+	printf ("A Area do circulo de raio %f = %f", raio, area);
 
-[Unit1]
-FileName=mainn.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
+// area do trap�zio descendente, brilll
 
+    float areat, baseMaior, baseMenor, alt;
+    
+    printf ("Insira a base maior: \n");
+    scanf ("%f", &baseMaior);
+	
+	printf ("Insira a base menor: \n");
+	scanf ("%f", &baseMenor);
+	
+	printf ("Insira a altura: \n");
+	scanf ("%f", &alt);
+	
+	areat = ((baseMaior+baseMenor)*alt)/2;
+	
+	printf ("Area do trapezio descedente igual a %f", areat); 
+	
+	return 0;
+}
