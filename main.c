@@ -1,62 +1,27 @@
-[Project]
-FileName=main.c
-Name=Project2
-Type=1
-Ver=2
-ObjFiles=
-Includes=
-Libs=
-PrivateResource=
-ResourceIncludes=
-MakeIncludes=
-Compiler=
-CppCompiler=
-Linker=
-IsCpp=0
-Icon=
-ExeOutput=
-ObjectOutput=
-LogOutput=
-LogOutputEnabled=0
-OverrideOutput=0
-OverrideOutputName=
-HostApplication=
-UseCustomMakefile=0
-CustomMakefile=
-CommandLine=
-Folders=
-IncludeVersionInfo=0
-SupportXPThemes=0
-CompilerSet=0
-CompilerSettings=0000000000000000000000000
-UnitCount=1
+#include <stdio.h>
+#include <stdlib.h>
 
-[VersionInfo]
-Major=1
-Minor=0
-Release=0
-Build=0
-LanguageID=1033
-CharsetID=1252
-CompanyName=
-FileVersion=
-FileDescription=Developed using the Dev-C++ IDE
-InternalName=
-LegalCopyright=
-LegalTrademarks=
-OriginalFilename=
-ProductName=
-ProductVersion=
-AutoIncBuildNr=0
-SyncProduct=1
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-[Unit1]
-FileName=..\Documents\main.c
-CompileCpp=0
-Folder=
-Compile=1
-Link=1
-Priority=1000
-OverrideBuildCmd=0
-BuildCmd=
 
+
+int comp_maior (int a, int b){
+	if(a>b)return a;
+	else return b;	
+}
+
+int main(int argc, char *argv[]) {
+	int valor[10];
+	
+	printf("Leia os numeros");
+	// PARA (INICIALIZAÇÃO, CONDIÇÃO, INCREMENTO
+	
+	for(i=0; i<10; i++){
+		scanf("%d",&valor[i]);
+	}
+	for(i=9; i>=0; i--){
+		printf("|%d|", valor[i]);
+	}
+
+    return 0;
+}
